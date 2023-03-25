@@ -1,0 +1,151 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --cyan-dark: hsl(179, 65%, 48%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white:hsl(0,0%,100%);
+}
+*{  
+    font-size: 16px;
+    font-family: 'Karla';
+}
+
+body{
+    background: var(--light-gray);  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+}
+main{
+    max-inline-size: 375px;
+    inline-size: 90%;
+}
+article{
+    padding: 1.5rem;
+    
+}
+.community-section{
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    background: var(--white);
+}
+h1{
+    color: var(--cyan);
+    font-weight:700;
+}
+.community-section h2{
+    color: var(--bright-yellow);
+    margin-block:1.2rem;
+}
+h2{
+    font-weight:700;
+}
+.community-section p{
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
+.subscription-section{
+    background:var(--cyan);
+    color:var(--white);
+}
+.cost{
+    color: var(--light-gray);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:0.5rem;
+    margin-block:0;
+}
+span{
+    color: var(--white);
+    font-size: xx-large;
+    font-weight:700;
+}
+.full-access-p{
+    margin-block-start: 0.4rem;
+}
+
+
+.subscription-section a{
+    padding: 0.8rem;
+    background:var(--bright-yellow);
+    display: block;
+    margin-inline: auto;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 5px;
+    font-weight:700;
+    margin-block:2rem 1rem;
+}
+.why-us-section{
+    background-color: var(--cyan-dark);
+    color: var(--white);
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    
+}
+.why-us-section ul{
+    list-style: none;
+    line-height: 1.5;
+    padding-inline-start: 0;
+    margin-block-start:1rem ;
+}
+.why-us-section ul li{
+    margin-inline-start: 0;
+}
+@media only screen and (min-width: 1000px){
+
+    body{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        inline-size:100% ;
+        block-size: 100%;
+        justify-content: center;
+    }
+
+    main{
+        margin-inline: auto;
+        min-inline-size: 40rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .community-section{
+        grid-column: span 2;
+        max-inline-size: 70ch;
+    } 
+    .subscription-section, .why-us-section{
+        max-inline-size: 40ch;
+    }
+    .subscription-section{
+        border-bottom-left-radius: 5px;
+    }
+    .why-us-section{
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+    .why-us-section ul li{
+         line-height:1.23;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
